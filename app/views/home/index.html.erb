@@ -1,0 +1,84 @@
+<div class="hero">
+    <div class="container">
+        <%= I18n.default_locale %>
+        <h1>Bem-vindo à Sua Software House</h1>
+        <p>Desenvolvendo soluções inovadoras de software para o seu negócio.</p>
+    </div>
+</div>
+
+<div class="container">
+    <h2 class="text-center">Sobre Nós</h2>
+    <p>Na Sua Software House, nós nos especializamos em criar soluções de software personalizadas que impulsionam o sucesso dos nossos clientes. Com uma equipe de especialistas em tecnologia, estamos comprometidos com a qualidade e inovação.</p>
+</div>
+
+<section id="contact">
+  <div class="container">
+    <h2 class="text-center">Contato</h2>
+    <p>Tem um projeto em mente? Entre em contato conosco:</p>
+    <ul>
+        <li>Email: contato@suaempresa.com</li>
+        <li>Telefone: (11) 1234-5678</li>
+        <li>Endereço: Rua Exemplo, 123, São Paulo, SP</li>
+    </ul>
+  </div>
+</section>
+
+<section id="founders">
+  <div class="container">
+    <h2 class='text-center bold uppercase'>Our Funders</h2>
+    <p class='text-center'>
+      From research to launching innovative startups we 
+      have the expertise to bring your projects to life.
+    </p>
+    <br />
+
+    <div class='row'>
+      <div class="col-md-3 col-md-offset-1">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= image_tag('', class: 'avatar') %>
+            <h4 class='bold text-center'>
+              Renato Franco,<br> CEO, Comex
+
+              <%= link_to 'https://www.linkedin.com/in/renato-franco/' do %>
+                <i class="fa-brands fa-linkedin text-right"></i>
+              <% end %>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= image_tag('', class: 'avatar') %>
+            <h4 class='bold text-center'>
+              Jonathan Cardoso, co-Founder
+
+              <%= link_to 'https://www.linkedin.com/in/jonathanjccardoso/' do %>
+                <i class="fa-brands fa-linkedin text-right"></i>
+              <% end %>
+            </h4>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-3">
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <%= image_tag('', class: 'avatar') %>
+            <h4 class='bold text-center'>
+              Hanzo Kimura, Art-Director
+
+              <%= link_to '' do %>
+                <i class="fa-brands fa-linkedin text-right"></i>
+              <% end %>
+            </h4>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>  
+</section>
+
+

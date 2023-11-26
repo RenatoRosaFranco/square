@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <title><%= title(yield :title) %> | Square</title>
+    <meta charset="utf-8">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <script src="https://kit.fontawesome.com/5165849ba2.js" crossorigin="anonymous"></script>
+    <style type="text/css"><%= yield :stylesheet %></style>
+    <script type="text/javascript"><%= yield :javascript %></script>
+  </head>
+  <body class="<%= controller.controller_name %>" data-spy='scroll'>
+    <%= render partial: 'shared/header' %>
+      <%= yield %>
+    <%= render partial: 'shared/footer' %>
+  </body>
+</html>
